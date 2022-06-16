@@ -17,7 +17,7 @@ it("should find the element of the header", ()=> {
   expect(headingElement).toBeInTheDocument();
 });
 
-it("should have a h1 tag ad the main header element", () => {
+it("should have a h1 tag as the main header element", () => {
   render(<App />);
   const headingElementType = screen.getByText(/Karlculator/i);
   expect(headingElementType).toContainHTML("h1");
